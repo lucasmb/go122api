@@ -1,0 +1,21 @@
+GET http://localhost:8000/v1 HTTP/1.1
+
+###
+
+GET http://localhost:8000/v1/user HTTP/1.1
+
+###
+
+GET http://localhost:8000/v1/user/123 HTTP/1.1
+
+###
+
+POST http://localhost:8000/v1/user HTTP/1.1
+content-type: application/json
+
+{
+    "id": "3",
+    "name": "TestUser",
+    "email": "testuser@company.com",
+    "created_at": "2024-05-19T15:00:21Z" 
+}
